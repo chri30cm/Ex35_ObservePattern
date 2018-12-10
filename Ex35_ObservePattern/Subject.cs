@@ -19,7 +19,6 @@ namespace Ex35_ObservePattern
         public void Detach(Observer o)
         {
             observers.Remove(o);
-            Notify();
         }
 
         public void Notify()
@@ -28,7 +27,6 @@ namespace Ex35_ObservePattern
             {
                 o.Update();
             }
-            
         }
     }
 }

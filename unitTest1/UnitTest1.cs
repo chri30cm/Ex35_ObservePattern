@@ -43,5 +43,5 @@ namespace unitTest1
             Assert.AreEqual(42, co3.State);
         }
     }
-
 }
+

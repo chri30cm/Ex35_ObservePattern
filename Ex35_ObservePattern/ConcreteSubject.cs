@@ -8,7 +8,7 @@ namespace Ex35_ObservePattern
 {
     public class ConcreteSubject : Subject
     {
-        private int state = 0;
+        private int state;
         public int State
         {
             get
@@ -18,6 +18,7 @@ namespace Ex35_ObservePattern
             set
             {
                 state = value;
+                Notify();
             }
         }
     }

@@ -9,6 +9,5 @@ namespace Ex35_ObservePattern
     public abstract class Observer
     {
         public abstract void Update();
-
     }
 }

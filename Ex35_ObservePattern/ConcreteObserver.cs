@@ -8,24 +8,34 @@ namespace Ex35_ObservePattern
 {
     public class ConcreteObserver : Observer
     {
-        private ConcreteSubject _subject;
-        
-
-        private int state = 0;
+        private ConcreteSubject subject;
+        private int state;
         public int State
         {
-            get;
-            set;
+            get
+            {
+                return state;
+            }
+            set
+            {
+                state = value;
+            }
         }
 
         public ConcreteObserver(ConcreteSubject subject)
         {
-           _subject = subject;
+           this.subject = subject;
         }
+
+        public ConcreteObserver()
+        {
+        }
+
+
 
         public override void Update()
         {
-            
+            state = subject.State;
         }
     }
 }
